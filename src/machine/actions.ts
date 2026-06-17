@@ -57,5 +57,5 @@ export const restartAction: GameAction<"restart"> = (context) => ({
 })
 
 export const setCurrentPlayerAction = (context: GameContext) => ({
-    currentPlayer: context.players.find(p => p.id === PlayerColor.YELLOW)!.id
+    currentPlayer: context.players.find(p => p.color === PlayerColor.YELLOW)!.id
 })
